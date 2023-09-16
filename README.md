@@ -165,3 +165,25 @@
 
 <img width="622" alt="화면 캡처 2023-09-16 144612" src="https://github.com/hachanghyun/springBlog/assets/33058284/4674956a-c9bd-45d7-a461-938682c2654d">
 
+### (10). 스프링 시큐리티
+
+#### 인증과 인가
+    인증은 사용자의 신원을 입증하는 과정
+    인가는 사이트의 특정 부분에 접근할 수 있는지 권한을 확인하는 작업
+
+#### WebSecurityConfig 설정
+    requestMatchers() : 특정 요청과 일치하는 url에 대한 액세스를 설정합니다.
+    permitAll() : 누구나 접근이 가능하게 설정합니다. 즉 "/login" , "/signup" , "/user" 로 요청이 오면 인증/인가 없이도 접근할 수 있습니다.
+    anyRequest() : 위에서 설정한 url 이외의 요청에 대해서 설정합니다.
+    authenticated() : 별도의 인가는 필요하지 않지만 인증이 성공된 상태여야 접근할 수 있습니다.
+
+    loginPages() : 로그인 페이지 경로를 설정합니다
+    defaultSuccessUrl() : 로그인이 완료되었을 때 이동할 경로를 설정합니다.
+
+    logoutSuccessUrl() : 로그아웃이 완료되었을 때 이동할 경로를 설정합니다.
+    invalidateHttpSession() : 로그아웃 이후에 세션을 전체 삭제할지 여부를 설정합니다.
+
+    userDetailsService() : 사용자 정보를 가져올 서비스를 설정합니다. 이때 설정하는 서비스 클래스는 반드시 UserDetailsService를 상속받은 클래스여야 합니다.
+    passwordEncoder() : 비밀번호를 암호화하기 위한 인코더를 설정합니다.
+
+    

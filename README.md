@@ -7,9 +7,9 @@
 ## 3. Meaning
     
 ## 4. Technology Stacks
-    Frontend : thymleaf
+    Frontend : thymeleaf
     
-    Backend : SpringBoot_2.7.1, SpringData JPA, JAVA_11, Gradle
+    Backend : SpringBoot_3, SpringData JPA, JAVA_17, Gradle
     
     Database : MariaDB
 
@@ -98,4 +98,45 @@
 #### @Component 애너테이션
     컴포넌트 애너테이션이 있는 클래스는 빈으로 등록되며, @Controller, @RestController, @Configuration, @Repository, @Service 모두 @Component 애너테이션을 가지고 있습니다.
     
+### (6).테스트 코드
 
+#### given - when - then 패턴
+    테스트 실행을 준비하는 단계
+    테스트를 진행하는 단계
+    테스트 결과를 검증하는 단계
+
+    
+#### @BeforeAll 
+    전체 테스트를 시작하기 전에 처음으로 한 번만 실행합니다.
+    예를 들어 데이터베이스를 연결해야 한거나 테스트 환경를 초기화할대 사용됩니다. 
+    이 애너테이션은 전체 테스트 실행 주기에서 한번만 호출되어야 하기 떄문에 메서드를 static으로 선언해야합니다.
+
+#### @BeforeEach 
+    테스트 케이시를 시작하기 전에 매번 실행합니다.
+    예를들어 테스트 메서드에서 사용하는 객체를 초기화하거나 테스트에 필요한 값을 미리 넣을때 사용할 수 있습니다.
+
+#### AfterAll 
+    전체 테스트를 마치고 종료하기 전에 한 번만 실행합니다.
+    예를 들어 데이터베이스 연결을 종료할때나 공통적으로 사용하는 자원을 해제할때 사용
+    전체 테스트 실행주기에서 한번만 호출. static 선언 
+
+#### AfterEach
+각 테스트 케이스를 종료하기 전 매번 실행
+
+#### @SpringBootTest
+    @SpringBootTest 는 메인 애플리케이션 클래스에 추가하는 애너테이션인 @SpringBootApplication
+    이있는 클래스를 찾고 그 클래스에 포함되어 있는 빈을 찾은 다음 테스트용 애플리케이션 컨텍스트라는 것을
+    만듭니다.
+
+#### @AutoConfigureMockMvc
+    MocoMvc를 생성하고 자동으로 구성하는 애너테이션
+    컨트롤러 테스트할때 사용하는 클래스
+
+#### @BeforeEach 
+    테스트를 실핼하기 전에 싱행하는 메서드에 적용하는 애너테이션
+
+#### @AfterEach
+    테스트를 실행한 이후에 실행하는 메서드에 적용하는 애너테이션.
+
+
+### ()

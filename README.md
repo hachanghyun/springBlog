@@ -209,4 +209,8 @@
     userDetailsService() : 사용자 정보를 가져올 서비스를 설정합니다. 이때 설정하는 서비스 클래스는 반드시 UserDetailsService를 상속받은 클래스여야 합니다.
     passwordEncoder() : 비밀번호를 암호화하기 위한 인코더를 설정합니다.
 
-    
+<img width="614" alt="화면 캡처 2023-09-16 193317" src="https://github.com/hachanghyun/springBlog/assets/33058284/d86eb5af-4816-4378-9d09-4a180d1e1829">
+<img width="610" alt="화면 캡처 2023-09-16 192556" src="https://github.com/hachanghyun/springBlog/assets/33058284/fa7c940d-3d67-4136-84ff-f5875e7c38bf">
+<img width="629" alt="화면 캡처 2023-09-16 192535" src="https://github.com/hachanghyun/springBlog/assets/33058284/1775eb11-7877-43ff-86e4-79afbf5ee7c9">
+<img width="622" alt="화면 캡처 2023-09-16 144612" src="https://github.com/hachanghyun/springBlog/assets/33058284/e32e6f31-b54d-4470-bf0b-132349bb559a">
+

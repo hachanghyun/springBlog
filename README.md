@@ -4,24 +4,37 @@
 ## 2. Summary
 ### 주요 기능
 
-<img width="1431" alt="스크린샷 2023-09-16 오후 9 20 55" src="https://github.com/hachanghyun/springBlog/assets/33058284/59c91371-2f77-4a45-8119-48ed3c5155c6">
-<img width="1438" alt="스크린샷 2023-09-16 오후 9 10 17" src="https://github.com/hachanghyun/springBlog/assets/33058284/bde28b06-7e70-46a8-a61a-e0711704d2f7">
-<img width="1439" alt="스크린샷 2023-09-16 오후 9 10 24" src="https://github.com/hachanghyun/springBlog/assets/33058284/8e0fab02-2b66-41bc-9877-f3c5f3e6c041">
-<img width="1436" alt="스크린샷 2023-09-16 오후 9 19 51" src="https://github.com/hachanghyun/springBlog/assets/33058284/1b82e7ae-774d-477b-b260-dd8cf7db0326">
-<img width="1440" alt="스크린샷 2023-09-16 오후 9 20 05" src="https://github.com/hachanghyun/springBlog/assets/33058284/bb67dcdf-980b-4259-af66-a5abc5c502af">
-<img width="1440" alt="스크린샷 2023-09-16 오후 9 20 14" src="https://github.com/hachanghyun/springBlog/assets/33058284/8e9786de-dab4-4f16-bf66-13e82a856ef4">
-<img width="1440" alt="스크린샷 2023-09-16 오후 9 20 24" src="https://github.com/hachanghyun/springBlog/assets/33058284/3ff846f9-8fad-4a13-9f35-ae2dd67af830">
-<img width="1439" alt="스크린샷 2023-09-16 오후 9 20 33" src="https://github.com/hachanghyun/springBlog/assets/33058284/67d0bc70-5f44-406e-8ca1-7d3674d5fbc9">
+#### (1). 로그인 회원가입 화면입니다.
+<img width="1438" alt="스크린샷 2023-09-16 오후 9 10 17" src="https://github.com/hachanghyun/springBlog/assets/33058284/3bb7335e-b7e9-4543-b8cb-cfe96198eadf">
+<img width="1439" alt="스크린샷 2023-09-16 오후 9 10 24" src="https://github.com/hachanghyun/springBlog/assets/33058284/0f869328-5290-49bc-a3b1-e0823560e6fd">
+
+#### (2).블로그 메인 화면입니다. 
+<img width="1436" alt="스크린샷 2023-09-16 오후 9 19 51" src="https://github.com/hachanghyun/springBlog/assets/33058284/9e9931bb-9b0f-4fd9-b812-32fc1e618658">
+
+#### (3). 블로그 글 등록화면 입니다.
+<img width="1439" alt="스크린샷 2023-09-16 오후 9 20 33" src="https://github.com/hachanghyun/springBlog/assets/33058284/01a9e600-adcd-41b6-8213-971ea32567f9">
+
+#### (4). 블로그 글 수정화면입니다.
+<img width="1440" alt="스크린샷 2023-09-16 오후 9 20 14" src="https://github.com/hachanghyun/springBlog/assets/33058284/813edcd8-9d3a-4044-ad58-744b5b38b1f4">
+
+#### (5). 블로그 글 삭제화면입니다.
+<img width="1440" alt="스크린샷 2023-09-16 오후 9 20 24" src="https://github.com/hachanghyun/springBlog/assets/33058284/57ec3cdc-aab5-49f8-b4e4-a037739ba4d3">
+
+#### (6). swagger test 화면입니다.
+<img width="1431" alt="스크린샷 2023-09-16 오후 9 20 55" src="https://github.com/hachanghyun/springBlog/assets/33058284/45ebf018-0466-4680-88d9-36d2aec9b5ce">
+
 
 
 ## 3. Meaning
+    스프링부트3버전으로 기본적인 블로그를 만들어보았다. 기본적인 CRUD기능과 JPA를 활용하여 제작하였으며 스프링 시큐리티 개념에 대해
+    정리할수 있는 좋은 기회가 되었다.
     
 ## 4. Technology Stacks
     Frontend : thymeleaf
     
-    Backend : SpringBoot_3, SpringData JPA, JAVA_17, Gradle
+    Backend : SpringBoot_3.0.2, SpringData JPA, JAVA_17, Gradle
     
-    Database : MariaDB
+    Database : h2
 
 ## 5. Develop Environment
 

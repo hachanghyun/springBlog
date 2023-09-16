@@ -163,4 +163,5 @@
     404 Not Found : 요청값으로 찾은 리소스가 없어 요청에 실패했음
     500 Internal Server Error : 서버상에 문제가 있어 요청에 실패했음
 
-  
+<img width="622" alt="화면 캡처 2023-09-16 144612" src="https://github.com/hachanghyun/springBlog/assets/33058284/4674956a-c9bd-45d7-a461-938682c2654d">
+

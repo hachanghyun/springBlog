@@ -214,3 +214,11 @@
 <img width="629" alt="화면 캡처 2023-09-16 192535" src="https://github.com/hachanghyun/springBlog/assets/33058284/1775eb11-7877-43ff-86e4-79afbf5ee7c9">
 <img width="622" alt="화면 캡처 2023-09-16 144612" src="https://github.com/hachanghyun/springBlog/assets/33058284/e32e6f31-b54d-4470-bf0b-132349bb559a">
 
+## 6. 기타
+### 참조사이트
+
+##### swagger 
+##### https://resilient-923.tistory.com/414
+
+##### H2 DB
+##### http://localhost:8080/h2-console/login.jsp?jsessionid=95356a8a9feeef80dc6197cab8c19b50

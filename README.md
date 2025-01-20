@@ -69,7 +69,7 @@
 #### spring-boot-starter-data-jpa
     ORM을 사용하기 위한 인터페이스의 모음인 JPA를 더 쉽게 사용하기 위한 의존성 모음
 
-### (1).설정값 정리
+### (3).설정값 정리
 
 #### (a).application-{profile}.properties 설정파일
 	@Value : 자바코드에서 설정값 사용가능
@@ -111,7 +111,7 @@
    
    	@DisplayName(테스트명) : Junit5에 추가된 어노테이션으로 테스트 코드 실행시 @DisplayName에 지정한 테스트명이 노출됩니다.
 
-### (2).JPA 정리
+### (4).JPA 정리
 
 #### (a).JPA 장점 ,단점
     장점
@@ -260,7 +260,7 @@
     (2). 유일하게 식별할 수 있어야한다.
     (3). 변하지 않는 값이어야 한다.
 
-#### (l).Repository 기본 메소드
+#### (5).Repository 기본 메소드
 	import org.springframework.data.jpa.repository.JpaRepository; 
 	
 	import domain.Member; 
@@ -304,15 +304,7 @@
 	JPAQuery 데이터 반환메소드
  	List<T> fetch() : 조회 결과 리스트 반환
 
-### (3).Front End
-	서버템플릿엔진 : JSP, Thymeleaf, Mustache, 서버에서 Java코드로 문자열을 만든뒤 이 문자열을 HTML로 변환하여 브라우저로 전달
- 	클라이언트 템플릿 엔진 : React, Vue, 브라우저에서 화면생성, Json, XML 형식의 데이터만 전달하고 클라이언트에서 이를 혼합해 화면을 만든다.
-
-### (4). 스프링 시큐리티
-	스프링 시큐리티 추가 : 모든 요청은 인증을 필요로함.
- 	스프링 시큐리티 기본적으로 제공하는 아이디 : user, 비밀번호는 애플리케이션을 실행할때마다 콘솔창에 출력해서 보여줌.
-
-### (5). 연관 관계 매핑
+### (6). 연관 관계 매핑
 	연관 관계를 매핑할 때, 생각해야 할 것은 크게 3가지가 있습니다.
 	방향 : 단방향, 양방향 (객체 참조)
  
@@ -637,28 +629,7 @@
  	JPA를 해보면 중간 테이블에 외래 키 외에 다른 정보가 들어가는 경우가 많기 때문에 다대다를 일대다, 
   	다대일로 풀어서 만드는 것(중간 테이블을 Entity로 만드는 것)이 추후 변경에도 유연하게 대처할 수 있습니다.
 
-## 6. 기타
-### 개발 참조 사이트
-##### MariaDB 설치
-##### https://extsdd.tistory.com/432
-
-##### MariaDB-의존성-추가-및-properties-설정
-##### https://velog.io/@sangwoo_le/MariaDB-Spring-Boot%EC%97%90-MariaDB-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%B6%94%EA%B0%80-%EB%B0%8F-properties-%EC%84%A4%EC%A0%95
-
-##### Query-DSL-Spring-boot-3.0-이상-Query-DSL-설정-방법
-##### https://velog.io/@daoh98/Query-DSL-Spring-boot-3.0-%EC%9D%B4%EC%83%81-Query-DSL-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95
-
-##### intellij 에서 break point 사용중 걸리지 않을때 해결방법
-##### https://januaryman.tistory.com/217
-
-##### 파일업로드 - 현재경로 참조하기
-##### https://suzxc2468.tistory.com/139
-
-##### 맥북 파일경로 설정
-##### https://skylarcoding.tistory.com/104
-
-
-### (3).자바17 특징
+### (7).자바17 특징
 
 #### (a).텍스트 블록
     String query17 = """ SELECT ~~~~ """;
@@ -683,7 +654,7 @@
     기존에 사용하던 자바 가상머신에 비해 훨씬 빠르게 시작되며 더 적은 메모리 공간을 차지합니다.
     JVM 실행 파일과 비교해 네이티브 이미지를 사용하면 가동 시간이 짧아지고 메모리를 더 적게 소모합니다.
 
-### (4). @SpringBootApplication
+### (8). @SpringBootApplication
 
 #### @SpringBootConfiguration
     스프링 부트관련 설정을 나타내는 애너테이션.
@@ -702,7 +673,7 @@
     스프링 부트의 메타 파일을 읽고 정의된 설정들을 자동으로 구성하는 역할을 수행합니다.
     자동 구성에서 살펴본 spring.factories 파일에 클래스들이 모두 @EnableAutoConfiguration을 사용할 때 자동 설정됩니다.
 
-### (5). 테스트 컨트롤러 살펴보기
+### (9). 테스트 컨트롤러 살펴보기
 
 #### @RestController
     라우터란 HTTP 요청과 메서드를 연결하는 장치
@@ -710,7 +681,7 @@
 #### @Component 애너테이션
     컴포넌트 애너테이션이 있는 클래스는 빈으로 등록되며, @Controller, @RestController, @Configuration, @Repository, @Service 모두 @Component 애너테이션을 가지고 있습니다.
     
-### (6).테스트 코드
+### (10).테스트 코드
 
 #### given - when - then 패턴
     테스트 실행을 준비하는 단계
@@ -751,7 +722,7 @@
     테스트를 실행한 이후에 실행하는 메서드에 적용하는 애너테이션.
 
 
-### (7). RestAPI (Represeintational State Transfer)
+### (11). RestAPI (Represeintational State Transfer)
     자원을 이름으로 구분해 자원의 상태를 주고받는 API
 
     URL에는 동사를 쓰지말고 자원을 표시ㅣ해야 한다
@@ -761,13 +732,13 @@
     PUT : 수정
     DELETE : 삭제
 
-### (8). 엔티티 구성하기
+### (12). 엔티티 구성하기
 
 #### 빌더 패턴
     생성자위에 입려하면 빌더 패턴 방식으로 객체를 생성할 수 있어 편리
     어느 필드에 어떤 값이 들어가는지 명시적으로 파악가능
     
-### (9). HTTP 응답코드 정리
+### (13). HTTP 응답코드 정리
     200 OK : 요청이 성공적으로 수행되었음
     201 Created : 요청이 성공적으로 수행되었고, 새로운 리소스가 생성되었음
     400 Bad Request : 요청값이 잘못되어 요청에 실패했음
@@ -777,7 +748,7 @@
 
 <img width="622" alt="화면 캡처 2023-09-16 144612" src="https://github.com/hachanghyun/springBlog/assets/33058284/4674956a-c9bd-45d7-a461-938682c2654d">
 
-### (10). 스프링 시큐리티
+### (14). 스프링 시큐리티
 
 #### 인증과 인가
     인증은 사용자의 신원을 입증하는 과정
@@ -811,3 +782,21 @@
 
 ##### H2 DB
 ##### http://localhost:8080/h2-console/login.jsp?jsessionid=95356a8a9feeef80dc6197cab8c19b50
+
+##### MariaDB 설치
+##### https://extsdd.tistory.com/432
+
+##### MariaDB-의존성-추가-및-properties-설정
+##### https://velog.io/@sangwoo_le/MariaDB-Spring-Boot%EC%97%90-MariaDB-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%B6%94%EA%B0%80-%EB%B0%8F-properties-%EC%84%A4%EC%A0%95
+
+##### Query-DSL-Spring-boot-3.0-이상-Query-DSL-설정-방법
+##### https://velog.io/@daoh98/Query-DSL-Spring-boot-3.0-%EC%9D%B4%EC%83%81-Query-DSL-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95
+
+##### intellij 에서 break point 사용중 걸리지 않을때 해결방법
+##### https://januaryman.tistory.com/217
+
+##### 파일업로드 - 현재경로 참조하기
+##### https://suzxc2468.tistory.com/139
+
+##### 맥북 파일경로 설정
+##### https://skylarcoding.tistory.com/104
